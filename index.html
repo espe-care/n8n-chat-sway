@@ -18,9 +18,22 @@
 
     createChat({
       webhookUrl: 'https://espedata.app.n8n.cloud/webhook/1a65e8ea-92c8-4f28-9d79-df11c264aa32/chat',
-      title: 'SofIA',
-      defaultLanguage: 'es'
+      defaultLanguage: 'es',
+      initialMessages: [
+        '¡Hola! 👋',
+        'Soy SofIA, tu asistente virtual. ¿En qué puedo ayudarte hoy?'
+      ],
+      i18n: {
+        es: {
+          title: '¡Bienvenido!',
+          subtitle: 'Inicia una conversación. Estoy aquí para ayudarte 24/7.',
+          footer: 'Asistente SofIA',
+          getStarted: 'Nueva conversación',
+          inputPlaceholder: 'Escribe tu pregunta...'
+        }
+      }
     });
   </script>
 </body>
 </html>
+
