@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>n8n Chat</title>
+  <title>Chat con SofIA</title>
   <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
   <style>
     html, body {
@@ -17,7 +17,9 @@
     import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
     createChat({
-      webhookUrl: 'https://TU_WEBHOOK_PUBLICO.com/webhook/0dff396c-965a-4b6c-ab29-465723336392/chat'
+      webhookUrl: 'https://TU_WEBHOOK_PUBLICO.com/webhook/0dff396c-965a-4b6c-ab29-465723336392/chat',
+      title: 'SofIA',
+      defaultLanguage: 'es'
     });
   </script>
 </body>
