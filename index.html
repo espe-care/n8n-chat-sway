@@ -27,9 +27,10 @@
     createChat({
       webhookUrl: 'https://espedata.app.n8n.cloud/webhook/1a65e8ea-92c8-4f28-9d79-df11c264aa32/chat',
       defaultLanguage: 'es',
+      showToggleButton: false,  // 👈 Desactiva el botón flotante automático
       initialMessages: [
         '¡Hola! 👋',
-        'Soy SofIA, el asistente virtual de Esperanza. ¿En qué puedo ayudarte hoy? Pregunta por nuestros servicios'
+        'Soy SofIA, el asistente virtual de Esperanza. ¿En qué puedo ayudarte hoy? Pregunta por nuestros servicios.'
       ],
       i18n: {
         es: {
@@ -44,3 +45,4 @@
   </script>
 </body>
 </html>
+
