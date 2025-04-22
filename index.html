@@ -20,12 +20,12 @@
       webhookUrl: 'https://espedata.app.n8n.cloud/webhook/1a65e8ea-92c8-4f28-9d79-df11c264aa32/chat',
       defaultLanguage: 'es',
       initialMessages: [
-        '¡Hola! 👋',
+        
         'Soy SofIA, el asistente virtual de Esperanza. ¿En qué puedo ayudarte hoy? Pregunta por nuestros servicios.'
       ],
       i18n: {
         es: {
-          title: '¡Bienvenido!',
+          title: '¡Hola! 👋',
           subtitle: 'Estoy aquí para ayudarte 24/7.',
           footer: 'Asistente SofIA',
           getStarted: 'Nueva conversación',
@@ -34,19 +34,6 @@
       }
     });
 
-    // 🔧 Inyectar estilo una vez esté montado el widget
-    setTimeout(() => {
-      const style = document.createElement("style");
-      style.innerHTML = `
-        n8n-chat .message.bot .bubble {
-          font-size: 10px !important;
-        }
-        n8n-chat .message.user .bubble {
-          font-size: 10px !important;
-        }
-      `;
-      document.head.appendChild(style);
-    }, 1000);
   </script>
 </body>
 </html>
